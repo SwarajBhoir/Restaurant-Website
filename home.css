@@ -1,0 +1,89 @@
+/* CSS: styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #f04c4c, #ffb74d); /* Example gradient */
+}
+
+
+.hero {
+    background: url('D:\Front End Project\bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: white;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #d24343;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .menu, .specials {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about img, .menu-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.menu-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-gallery img {
+    width: 50%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}

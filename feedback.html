@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form action="thankyou.html" method="GET">
+            <!-- Feedback Form Container -->
+            <div class="form-content">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Restaurant Visited -->
+                <div class="form-group">
+                    <label for="restaurant">Restaurant Visited</label>
+                    <select id="restaurant" name="restaurant" required>
+                        <option value="">-- Select Location --</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+
+                <!-- Type of Food -->
+                <div class="form-group">
+                    <label for="food">Type of Food</label>
+                    <select id="food" name="food" required>
+                        <option value="">-- Select Food Type --</option>
+                        <option value="North Indian">North Indian</option>
+                        <option value="South Indian">South Indian</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Continental">Continental</option>
+                        <option value="Street Food">Street Food</option>
+                    </select>
+                </div>
+
+                <!-- Feedback Message -->
+                <div class="form-group">
+                    <label for="message">Your Feedback</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+                </div>
+
+                <!-- Rating -->
+                <div class="form-group">
+                    <label for="rating">Rate Us</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">-- Select a Rating --</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Good</option>
+                        <option value="3">3 - Average</option>
+                        <option value="2">2 - Poor</option>
+                        <option value="1">1 - Very Poor</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline CSS for additional thank-you styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .thank-you-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e74c3c; /* Tomato red */
+            animation: jump 1.5s infinite ease-in-out; /* Jumping animation */
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #2c3e50; /* Dark gray */
+            margin-top: 1rem;
+        }
+
+        .btn {
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            background: #e67e22; /* Bright orange button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        .btn:hover {
+            background: #d35400; /* Dark orange on hover */
+        }
+
+        @keyframes jump {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px); /* Jump height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>Thank You!</h1>
+        <p>We appreciate your feedback. Have a great day!</p>
+        <a href="feedback.html" class="btn">Submit More Feedback</a>
+    </div>
+</body>
+</html>
